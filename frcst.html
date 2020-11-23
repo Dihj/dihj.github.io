@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+   
+    <title>Plateform test v2</title>
+</head>
+
+<body>
+    <div id="conteneur">
+    <div class="header">
+        <p>Lorem ipsum funt HEADER</p>
+        </div>
+    <div id="menu">
+        <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Situation General</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Publication</a></li>
+            </ul></nav>
+        </div>
+    <div id="wrapper">
+        <div id="post0">
+        <h1>Les Prévisions saisonnières à Madagascar</h1>
+        </div>
+        <div id="post1">
+        <body>
+            <div class="tabcontainer">
+                <div class="buttonContainer">
+                    <button onclick="showPanel(0,'#f44336')"> Rainfall </button>
+                    <button onclick="showPanel(1,'#4caf50')"> T min</button>
+                    <button onclick="showPanel(2,'#2196f3')"> T max</button>
+                    <button onclick="showPanel(3,'#ff5722')"> T moy</button>
+                </div>
+                
+                <div class="tabPanel" > RR
+                    <div class="buttonfrcst">
+                        <button onclick="showFrcst(01,'#ff5722')">CFT</button>
+                        <button onclick="showFrcst(02,'#2196f3')">CPT</button>
+                    </div>
+                    <div class="tabPanelfrcst">CFT
+                        <select class="model" id="choix_skill" type="text" onChange="skill_model()">
+                            <option value="pearson">Correlation of Pearson</option>
+                            <option value="2AFC">2AFC</option>
+                            <option value="spearman">Correlation Spearman</option>
+                            <option value="frcst">Forecast RR</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tabPanel"> Tmin 
+                    <select class="mois" id="choix_moistn" type="text" onChange="tn_normale()">
+                        <option value="tnJan">January</option>
+                        <option value="tnFeb">February</option>
+                        <option value="tnMar">Mars</option>
+                        <option value="tnApr">April</option>
+                        <option value="tnMay">May</option>
+                        <option value="tnJun">June</option>
+                        <option value="tnJul">July</option>
+                        <option value="tnAug">August</option>
+                        <option value="tnSep">September</option>
+                        <option value="tnOct">October</option>
+                        <option value="tnNov">November</option>
+                        <option value="tnDec">December</option>   
+                    </select>
+                    <div class="sary" id="sary_paramtn">&nbsp;</div>
+                     <div class="legende">
+                        <img src="img/tnLG.gif" style="max-width: 60%"/>
+                    </div>
+                </div>
+                <div class="tabPanel"> Tmax 
+                     <select class="mois" id="choix_moistx" type="text" onChange="tx_normale()">
+                        <option value="txJan">January</option>
+                        <option value="txFeb">February</option>
+                        <option value="txMar">Mars</option>
+                        <option value="txApr">April</option>
+                        <option value="txMay">May</option>
+                        <option value="txJun">June</option>
+                        <option value="txJul">July</option>
+                        <option value="txAug">August</option>
+                        <option value="txSep">September</option>
+                        <option value="txOct">October</option>
+                        <option value="txNov">November</option>
+                        <option value="txDec">December</option>   
+                    </select>
+                    <div class="sary" id="sary_paramtx">&nbsp;</div>
+                     <div class="legende">
+                        <img src="img/txLG.gif" style="max-width: 60%"/>
+                    </div>
+                </div>
+                <div class="tabPanel"> Tmoy 
+                    <select class="mois" id="choix_moistmoy" type="text" onChange="tmoy_normale()">
+                        <option value="tmoyJan">January</option>
+                        <option value="tmoyFeb">February</option>
+                        <option value="tmoyMar">Mars</option>
+                        <option value="tmoyApr">April</option>
+                        <option value="tmoyMay">May</option>
+                        <option value="tmoyJun">June</option>
+                        <option value="tmoyJul">July</option>
+                        <option value="tmoyAug">August</option>
+                        <option value="tmoySep">September</option>
+                        <option value="tmoyOct">October</option>
+                        <option value="tmoyNov">November</option>
+                        <option value="tmoyDec">December</option>   
+                    </select>
+                    <div class="sary" id="sary_paramtmoy">&nbsp;</div>
+                     <div class="legende">
+                        <img src="img/tmoyLG.gif" style="max-width: 60%"/>
+                    </div>
+                </div>
+            </div>
+            
+            <script type="text/javascript" src="myScript.js">
+            </script>  
+            
+            </body>
+            
+        </div>
+       
+        <div id="post2">
+            <h1>Description du climat et du temps en mois de Juin</h1>  
+            <p>Le mois de Juin marque le debut de l'hiver dans toute Madagascar.<br/>
+            L'anticyclone de mascaraigne se renforce au mois de Juin, qui favorise la monté des flux froids du Sud vers le Sud de l'île. <br/>
+            Le renforcement de l'Alizé devient ensuite une opportunités pour les régions au Sud de l'île qui apporte un peu de précipitations en ce debut de l'hiver. Les hautes montagnes seront plus sec avec l'Alizé ainsi que les parties au Nord et Nord-Ouest de Madagascar. <br/>
+            L'effet de Fhoen ou l'effet orographique se renforce avec le flux du vent du Sud qui renforce les précipitaitons matinales à l'Est de l'île. 
+            </p>
+
+        </div>
+        
+        </div>
+        
+    <div id="sidebar">
+        <h2>Statistiques climatologiques</h2>
+                <h5>Les records climatologiques du mois de Juin</h5>
+                
+        <p> Des <strong>précipitations records</strong> de 800mm en 24 heure ont été récueillie à Maroantsetra le <strong>24 Juin 1996</strong> lors du passage du mauvais temps au Nord de Madagascar en pleine hiver.</p>
+                <p>
+                Des températures minimales atteingnant les 12° Celcius n'ont plus été atteintes au centre des hautes plateaux de l'île or celle-ci ont été des faits remarqueant l'arrivé de l'hiver dans ces hautes montagnes. </p>
+        <h2>Fait marquant en Juin</h2>
+                <h5>Tableau récaputilati des records en mois de Juin</h5>
+                <table>
+                    <tr>
+                        <th>Paramètre</th>
+                        <th>Records</th>
+                        <th>Lieu</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>Précipitations</td>
+                        <td>807 mm en 24 heures</td>
+                        <td>Station d'Antsalova</td>
+                        <td>25 Juin 1987</td>
+                    </tr>
+                    <tr>
+                        <td>Température maximale</td>
+                        <td>45° C</td>
+                        <td>Station de Maevatanana</td>
+                        <td>30 Juin 1997</td>
+                    </tr>
+                    <tr>
+                        <td>Température minimale</td>
+                        <td>1°C</td>
+                        <td>Station de Nanokely (Atsirabe)</td>
+                        <td>5 Juin 1962</td>
+                    </tr>
+                    
+                </table>
+                
+    </div>
+    </div>
+    
+</body>
+</html>
