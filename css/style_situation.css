@@ -57,14 +57,14 @@ nav a{
     text-align: center; 
     background: royalblue;
     font-size: 17px;
-    color: steelblue;
+    color: black;
     padding: 5px 5px;
     font-family: Arial;
         
 }
 nav a:hover{
     background: blue;
-    color: lightskyblue;
+    color: navy;
     
 }
 nav{
@@ -83,7 +83,7 @@ ul{
 #post0 h1{
     text-align: center;
     font-size: 20px;
-    color: lightskyblue;
+    color: black;
     margin: 1px 0px;
     padding: 20px 5px;
 }
