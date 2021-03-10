@@ -121,7 +121,7 @@ ul{
 }
 #h_bar li a{
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -134,7 +134,7 @@ ul{
     float: none
 }
 #v_bar{
-    background-color: antiquewhite;
+    background-color: black;
     height: 380px;
     width: 80px;
     margin: 0;
@@ -247,7 +247,7 @@ ul{
     -webkit-border-radius: 10px;	
 	background-color:red;
 	background:rgba(100,100,100,.1);
-	color:white;
+	color:black;
 	font-weight:bold;
 	font-size:20px;
 	padding-top:16px;
