@@ -169,6 +169,7 @@ ul{
     cursor: pointer;
     padding: 10px;
     background-color: royalblue;
+    color: black;
 }
 .tabcontainer .buttonContainer button:hover{
     background-color: darkblue;
@@ -188,7 +189,7 @@ ul{
 .tabcontainer .tabPanel{
     width: 100%;
     background-color: steelblue;
-    color: white;
+    color: black;
     text-align: center;
     box-sizing: border-box;
     display: none;
