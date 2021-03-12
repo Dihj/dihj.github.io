@@ -3,6 +3,7 @@ h1 { font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, s
 p {
  padding:2em;
  margin:auto;
+ text-align: justify;
  }
 #conteneur{
     min-width: 80%;
