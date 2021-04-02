@@ -75,7 +75,7 @@ body{
     width: 200px;
     height: auto;
     background: url(http://collectifecolerobertdoisneau.e-monsite.com/medias/images/discussion-forum.jpg?fx=r_300_300);
-    background-size: 100% 100%;
+    background-size: 50% 50%;
     border-radius: 10%;
     float: left;
     margin: 30px;   
@@ -93,7 +93,7 @@ body{
     width: 200px;
     height: auto;
     background: url(https://dihj.github.io/dihj.test-psmdg.mg/img/FRCST/dyn_Frcst.png);
-    background-size: 100% 100%;
+    background-size: 20% 20%;
     border-radius: 10%;
     float: left;
     margin: 30px;   
